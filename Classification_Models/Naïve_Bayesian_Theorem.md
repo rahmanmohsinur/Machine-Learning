@@ -130,8 +130,6 @@ Bayes’ Theorem is central to many probabilistic machine learning models becaus
 
 Naïve Bayes represents one of the simplest and most direct applications of Bayes’ Theorem in practical machine learning.
 
----
-
 ## 4. Naïve Independence Assumption
 
 Naïve Bayes assumes that all features are **conditionally independent given the class**:
@@ -154,8 +152,6 @@ P(\text{age} \mid C_k)\,
 P(\text{activity} \mid C_k)
 $$
 
----
-
 ## 5 Class Prior Probabilities
 
 The prior probability of each class is calculated from the dataset.
@@ -172,8 +168,6 @@ $$
 $$
 P(\text{Non-Sporty}) = \frac{1}{5} = 0.2
 $$
-
----
 
 ## 6. Likelihood Estimation
 
@@ -215,8 +209,6 @@ $$
 
 The variance $\sigma^2_{\text{height,Sporty}}$ is calculated using standard statistical formulas.
 
----
-
 ### 6.2 Categorical Feature (Activity Level)
 
 Activity level is a **categorical** feature with two possible values:
@@ -244,8 +236,6 @@ Where:
 - $N_k$ = total samples in class $k$
 - $V$ = number of possible categories ($V=2$)
 
----
-
 ## 7. Posterior Probability Calculation
 
 For a new observation $X$, the posterior probability is:
@@ -264,8 +254,6 @@ $$
 \sum_{i=1}^{n} \log P(x_i \mid C_k)
 $$
 
----
-
 ## 8. Classification Decision
 
 The predicted class is the one with the maximum posterior probability:
@@ -279,8 +267,6 @@ $$
 \right]
 $$
 
----
-
 ## 9. Strengths and Limitations
 
 ### Strengths
@@ -292,8 +278,6 @@ $$
 - Assumes feature independence  
 - Sensitive to incorrect distribution assumptions  
 - Limited ability to model complex relationships  
-
----
 
 ## 10. Conclusion
 This example demonstrates how Gaussian Naïve Bayes can be applied to a small fitness dataset. By estimating class priors, modeling feature likelihoods, and applying Bayes’ Theorem, the algorithm predicts whether an individual is Sporty or Non-Sporty in a mathematically principled way.
