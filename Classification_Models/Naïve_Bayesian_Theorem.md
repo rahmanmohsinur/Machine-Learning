@@ -60,7 +60,7 @@ $$
 1 = \frac{\sum_{k}P(X \mid C_k)\, P(C_k)}{P(X)} 
 $$
 $$
-P(X) = \sum_{k} P(X \mid C_k)\, P(C_k)
+∴ P(X) = \sum_{k} P(X \mid C_k)\, P(C_k)
 $$
 
 Although essential for obtaining true probability values, $P(X)$ does **not depend on the class** being evaluated. As a result, it does not influence which class is ultimately selected during classification.
